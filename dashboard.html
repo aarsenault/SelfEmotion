@@ -1,4 +1,7 @@
 <!doctype html>
+
+<script src="assets/js/charts/pieChart.js"></script>
+
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -46,7 +49,7 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="http://www.creative-tim.com" class="simple-text">
-                    Creative Tim
+                    Self-emotions
                 </a>
             </div>
 
@@ -93,12 +96,6 @@
                         <p>Notifications</p>
                     </a>
                 </li>
-				<li class="active-pro">
-                    <a href="upgrade.html">
-                        <i class="pe-7s-rocket"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
-                </li>
             </ul>
     	</div>
     </div>
@@ -126,14 +123,12 @@
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-globe"></i>
                                     <b class="caret"></b>
-                                    <span class="notification">5</span>
+                                    <span class="notification">3</span>
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
+                                <li><a href="#">Johanna has become High-Risk !</a></li>
+                                <li><a href="#">Anna is feeling better after you talked with her</a></li>
+	                              <li><a href="#">Michel has become High-Risk !</a></li>
                               </ul>
                         </li>
                         <li>
@@ -181,21 +176,22 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Email Statistics</h4>
-                                <p class="category">Last Campaign Performance</p>
+                                <h4 class="title">Student Evaluation</h4>
+                                <p class="category">Last Evaluation</p>
+
                             </div>
                             <div class="content">
                                 <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
 
                                 <div class="footer">
                                     <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Open
-                                        <i class="fa fa-circle text-danger"></i> Bounce
-                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                        <i class="fa fa-circle text-danger"></i> High-risk
+                                        <i class="fa fa-circle text-warning"></i> Moderate
+                                        <i class="fa fa-circle text-info"></i> Low
                                     </div>
                                     <hr>
                                     <div class="stats">
-                                        <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+                                        <i class="fa fa-clock-o"></i> Evaluation sent 2 days ago
                                     </div>
                                 </div>
                             </div>
