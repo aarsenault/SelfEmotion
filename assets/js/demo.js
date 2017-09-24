@@ -19,16 +19,21 @@ demo = {
     initChartist: function(){
 
         var dataSales = {
-          labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+          labels: ['Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
           series: [
-             [500, 385, 490, 492, 554, 586, 698, 695, 752, 788, 846, 944],
-          ]
+             [10,20,20,30, 30, , , , , , ],
+             [, , , , , , 50, 75, 75,80,85],
+             [, , ,, 30, 35,50 , , ,  , ]
+          ],
+
+
+
         };
 
         var optionsSales = {
-          lineSmooth: false,
+          lineSmooth: true,
           low: 0,
-          high: 800,
+          high: 100,
           showArea: true,
           height: "245px",
           axisX: {
@@ -39,6 +44,7 @@ demo = {
           }),
           showLine: false,
           showPoint: false,
+
         };
 
         var responsiveSales = [
@@ -51,7 +57,12 @@ demo = {
           }]
         ];
 
-        Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
+        Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales,  {
+
+          }, { targetLine: {
+              value: 90,
+              class: 'ct-target-line'
+            }});
 
 
         var data = {
