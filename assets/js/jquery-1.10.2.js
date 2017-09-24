@@ -3022,7 +3022,7 @@ jQuery.Callbacks = function( options ) {
 
 	var // Flag to know if list is currently firing
 		firing,
-		// Last fire value (for non-forgettable lists)
+		// Last fire value (for non-forgetStudent Lists)
 		memory,
 		// Flag to know if list was already fired
 		fired,
@@ -3034,7 +3034,7 @@ jQuery.Callbacks = function( options ) {
 		firingStart,
 		// Actual callback list
 		list = [],
-		// Stack of fire calls for repeatable lists
+		// Stack of fire calls for repeaStudent Lists
 		stack = !options.once && [],
 		// Fire callbacks
 		fire = function( data ) {
