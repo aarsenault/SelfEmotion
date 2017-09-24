@@ -19,11 +19,11 @@ demo = {
   initChartist: function(){
 
     var dataSales = {
-      labels: ['Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
+      labels: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
       series: [
-        [, , , , , , 10,20,20,30, 30],
-          [50, 75, 75,80,85, , , , , , ],
-        [, , ,, 30, 35,50 , , ,  , ],
+        [, , , , , , 25,20,20,15, 10],
+          [95, 80, 80,75, , , , , , , ],
+        [, , ,75, 50, 35,25 , , ,  , ],
       ],
     };
 
